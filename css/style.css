@@ -729,6 +729,22 @@ video {
 /* Responsive media queries
 ==================================================*/
 
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) { 
+      
+      .header-content h1 {
+      font-size: 14px;
+    }
+
+    .about-img-div img {
+    margin-right: -30px;
+    width: 350px;
+    }
+
+    }
+
 @media (max-width: 991px) {
     .portfolio .categories-grid .categories ul li a {
         padding: 0 2px;
