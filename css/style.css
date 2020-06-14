@@ -43,14 +43,6 @@ h1 {
 
 }
 
-h1 .underline {
-background-image: linear-gradient(120deg, #fabbbb 0%, #8fd3f4 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 0.2em;
-  background-position: 0 88%;
-  transition: background-size 0.25s ease-in;
-}
-
 h4 {
     font-family: 'Roboto', sans-serif;
     text-transform: capitalize;
