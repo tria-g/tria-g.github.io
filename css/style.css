@@ -359,7 +359,7 @@ color: #fabbbb;
 }
 
 .button span:after {
-  content: '↓';
+  content: '✉︎';
   position: absolute;
   opacity: 0;
   top: 0;
@@ -408,7 +408,7 @@ background-color: #3a3a3a;
 }
 
 .button2 span:after {
-  content: '✉︎';
+  content: '↓';
   position: absolute;
   opacity: 0;
   top: 0;
@@ -746,10 +746,6 @@ footer{
 .footer-distributed .footer-left{
   width: 30%;
 }
- .footer-distributed .footer-left img{
-  width: 10%;
-}
- 
 /* The company logo */
  
  
@@ -830,28 +826,6 @@ footer{
 }
  
  
- 
-/* Here is the code for Responsive Footer */
-/* You can remove below code if you don't want Footer to be responsive */
- 
- 
-@media (max-width: 880px) {
- 
-  .footer-distributed .footer-left,
-  .footer-distributed .footer-center,
-  .footer-distributed .footer-right{
-    display: block;
-    width: 100%;
-    margin-bottom: 40px;
-    text-align: center;
-  }
- 
-  .footer-distributed .footer-center i{
-    margin-left: 0;
-  }
- 
-}
-
 
 /* Responsive media queries
 ==================================================*/
@@ -869,13 +843,21 @@ footer{
     height: 65px;
     }
         
+          .footer-distributed .footer-left {
+      width: 50%;
+    }
+    .footer-distributed {
+    padding-right: 10px;
+    padding-left: 150px;
+    padding-bottom: 0;
+  }
+  .footer-distributed .footer-right {
+    margin-left: 620px;
+    margin-top: -25px;
+  }
 }
 
 @media (max-width: 768px) {
-    .timeline-event-copy {
-        width: 90%;
-        left: 2em;
-    }
 
     .bg-nav ul {
     padding: 1px;
@@ -889,8 +871,19 @@ footer{
     margin: 0 auto;
     }
 
+  .footer-distributed .footer-left {
+      width: 50%;
+    }
+    .footer-distributed {
+    padding-right: 10px;
+    padding-left: 40px;
+    padding-bottom: 0;
+  }
+  .footer-distributed .footer-right {
+    margin-left: 620px;
+    margin-top: -25px;
+  }
 }
-
 
 
 @media only screen and (max-width: 700px)
@@ -905,10 +898,22 @@ footer{
         .header-content {
      margin-left: 10px;
     }
+
+      .footer-distributed .footer-left {
+      width: 50%;
+    }
+    .footer-distributed {
+    padding-right: 10px;
+    padding-left: 30px;
+    padding-bottom: 0;
+  }
+  .footer-distributed .footer-right {
+    margin-left: 460px;
+    margin-top: -25px;
+  }
 }
 
-@media only screen and (max-width: 1000px)
-{
+@media (max-width: 1000px) {
    .about-img-div img {
         margin-right: -10px;
     }
@@ -917,7 +922,12 @@ footer{
       font-size: 45px;
     }
 
+    .footer-distributed {
+    padding-left: 50px;
+  }
 }
+
+
 
 @media (max-width: 500px) {
     h1 {
@@ -945,6 +955,20 @@ footer{
       transition: background-size 0.25s ease-in;
     }
 
+     .footer-distributed .footer-left {
+      width: 50%;
+    }
+    .footer-distributed {
+    padding-right: 10px;
+    padding-left: 30px;
+    padding-bottom: 0;
+  }
+  .footer-distributed .footer-right {
+    margin-left: 380px;
+    margin-top: -25px;
+  }
+}
+
 @media (max-width: 420px) {
     nav li {
         margin: 6px;
@@ -952,7 +976,20 @@ footer{
     nav li a {
         font-size: 10px;
     }
+
+   .footer-distributed .footer-left {
+      width: 50%;
     }
+    .footer-distributed {
+    padding-right: 10px;
+    padding-left: 30px;
+    padding-bottom: 0;
+  }
+  .footer-distributed .footer-right {
+    margin-left: 310px;
+    margin-top: -25px;
+  }
+
 }
 
 @media only screen and (max-width: 600px)
@@ -978,6 +1015,18 @@ footer{
     header {
     height: 80px;
     }
+     .footer-distributed .footer-left {
+      width: 50%;
+    }
+    .footer-distributed {
+    padding-right: 10px;
+    padding-left: 30px;
+    padding-bottom: 0;
+  }
+  .footer-distributed .footer-right {
+    margin-left: 460px;
+    margin-top: -25px;
+  }
 }
 
 
@@ -994,3 +1043,18 @@ footer{
 .portfolio .categories-grid .categories ul li a {
        margin: 0 8px;
     }
+
+    .footer-distributed .footer-left {
+      width: 50%;
+    }
+    .footer-distributed {
+    padding-right: 10px;
+    padding-left: 30px;
+    padding-bottom: 0;
+  }
+  .footer-distributed .footer-right {
+    margin-left: 250px;
+    margin-top: -25px;
+  }
+}
+
