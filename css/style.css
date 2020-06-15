@@ -251,6 +251,7 @@ nav li a {
     font-size: 11px;
 }
 
+
 .bg-nav {
     background: #fff;
     border-bottom: 1px solid #fabbbb
@@ -306,10 +307,9 @@ a.active {
 }
 
 .header-content p {
-  font-size: 13px;
-  letter-spacing: 1px;
+  font-size: 12px;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   color: #3a3a3a;
 }
 
@@ -322,6 +322,11 @@ a.active {
   color: #3a3a3a;
   font-size: 15px;
 }
+
+.header-content .list-social li i:hover{
+  color: #fabbbb;
+}
+
 
 
 .header-content a {
