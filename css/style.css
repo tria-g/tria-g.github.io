@@ -974,6 +974,7 @@ footer{
   }
 }
 
+
 @media (max-width: 420px) {
     nav li {
         margin: 6px;
@@ -1059,6 +1060,46 @@ footer{
   }
   .footer-distributed .footer-right {
     margin-left: 250px;
+    margin-top: -25px;
+  }
+}
+
+@media (max-width: 505px) {
+    h1 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 50px;
+        line-height: 50px;
+    }
+    #home,
+    .disply-table {
+        height: 600px;
+    }
+    .about-border {
+        width: 265px;
+    }
+    .portfolio .categories-grid .categories ul li {
+        list-style: none;
+        margin: 10px 0;
+    }
+
+    .modal-content {
+    font-size: 12px;
+      background-repeat: no-repeat;
+      background-size: 50% 0.5em;
+      background-position: 0 80%;
+      transition: background-size 0.25s ease-in;
+    }
+
+     .footer-distributed .footer-left {
+      width: 50%;
+    }
+    .footer-distributed {
+    padding-right: 10px;
+    padding-left: 30px;
+    padding-bottom: 0;
+  }
+  .footer-distributed .footer-right {
+    margin-left: 390px;
     margin-top: -25px;
   }
 }
