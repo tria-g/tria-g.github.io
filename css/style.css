@@ -1049,7 +1049,23 @@ footer{
   }
 }
 
-@media (max-width: 375px)  { 
+
+@media only screen and (max-width: 768px) { 
+      
+    .footer-distributed {
+        padding-left: 30px;
+  }
+}
+
+@media only screen and (max-width: 1024px) { 
+      
+    .footer-distributed {
+        padding-left: 55px;
+  }
+}
+
+
+@media only screen and (max-width: 375px)  { 
       
     #projects {
     padding-bottom: 50px;
@@ -1069,7 +1085,6 @@ footer{
 .portfolio .categories-grid .categories ul li a {
        margin: 0 8px;
     }
-
     .footer-distributed .footer-left {
       width: 50%;
     }
@@ -1089,4 +1104,81 @@ footer{
   }
 }
 
+@media only screen and (max-width: 411px)  { 
+      
+    #projects {
+    padding-bottom: 50px;
+  }
 
+.header-content h1 {
+      font-size: 20px;
+      margin-bottom: 0px;
+    }
+    .header-content p {
+    font-size: 11.5px;
+  }
+    .about-img-div img {
+    margin-right: -30px;
+    width: 350px;
+    }
+.portfolio .categories-grid .categories ul li a {
+       margin: 0 8px;
+    }
+    .footer-distributed .footer-left {
+      width: 50%;
+    }
+    .footer-distributed {
+    padding-right: 10px;
+    padding-left: 20px;
+    padding-bottom: 0;
+  }
+  .footer-distributed .footer-right {
+    margin-left: 300px;
+    margin-top: -25px;
+  }
+
+  p {
+    font-size: 10.5px;
+    margin: 0 0 0px;
+  }
+}
+
+
+@media only screen and (max-width: 360px)  { 
+      
+    #projects {
+    padding-bottom: 50px;
+  }
+
+.header-content h1 {
+      font-size: 20px;
+      margin-bottom: 0px;
+    }
+    .header-content p {
+    font-size: 11.5px;
+  }
+    .about-img-div img {
+    margin-right: -30px;
+    width: 350px;
+    }
+.portfolio .categories-grid .categories ul li a {
+       margin: 0 8px;
+    }
+    .footer-distributed .footer-left {
+      width: 50%;
+    }
+    .footer-distributed {
+    padding-right: 10px;
+    padding-left: 20px;
+    padding-bottom: 0;
+  }
+  .footer-distributed .footer-right {
+    margin-left: 250px;
+    margin-top: -25px;
+  }
+
+  p {
+    font-size: 10.5px;
+    margin: 0 0 0px;
+  }
+}
