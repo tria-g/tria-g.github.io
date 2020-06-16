@@ -1022,8 +1022,9 @@ footer{
     width: 350px;
     }
 .portfolio .categories-grid .categories ul li a {
-       margin: 0 8px;
+       margin: 0 2px;
     }
+
     .footer-distributed .footer-left {
       width: 50%;
     }
