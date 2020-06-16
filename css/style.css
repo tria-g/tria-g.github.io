@@ -905,16 +905,14 @@ footer{
     header {
     height: 80px;
     }
-     .footer-distributed .footer-left {
-      width: 50%;
-    }
+
     .footer-distributed {
     padding-right: 10px;
-    padding-left: 30px;
+    padding-left: 20px;
     padding-bottom: 0;
   }
   .footer-distributed .footer-right {
-    margin-left: 460px;
+    margin-left: 350px;
     margin-top: -25px;
   }
 }
