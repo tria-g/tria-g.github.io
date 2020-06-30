@@ -422,7 +422,8 @@ background-color: #3a3a3a;
 ==================================================*/
 
 #projects {
-    padding: 100px 0;
+    padding-top: 100px;
+    padding-bottom: 30px;
 }
 
 .portfolio .categories-grid span {
