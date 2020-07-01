@@ -417,6 +417,51 @@ background-color: #3a3a3a;
 }
 
 
+.button3 {
+background-color: #3a3a3a;
+  border-radius: 2px;
+  border: #fabbbb;
+  color: #FFFFFF;
+  background-color: 
+  text-align: center;
+  font-size: 11px;
+  padding: 5px;
+  width: 250px;
+  transition: all 0.5s;
+  cursor: pointer;
+    margin-right: 10px;
+}
+
+.button3 span:after {
+  content: '👌';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -10px;
+  transition: 0.5s;
+}
+
+.button3:hover span {
+  padding-right: 18px;
+}
+
+.button3:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.button3 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button3:hover {
+    background-color: #fabbbb;
+}
+
+
 
 /* works
 ==================================================*/
