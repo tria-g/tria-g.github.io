@@ -305,12 +305,23 @@ a.active {
 
 
 .header-content a {
-color: #fabbbb;
+color: #3a3a3a;
 }
 
 .header-content a:hover{
-    text-decoration: underline;
-     text-decoration-color: #3a3a3a;
+    color: #fabbbb;
+    border-bottom: none;
+}
+
+a.stuff {
+color: #3a3a3a;
+border-bottom: 1px dotted;
+border-color: #fabbbb;
+}
+
+a.stuff:hover{
+    color: #fabbbb;
+    border-bottom: none;
 }
 
 /* about section
@@ -462,6 +473,80 @@ background-color: #3a3a3a;
 }
 
 
+/*== start of code for tooltips ==*/
+.tool {
+    cursor: help;
+    position: relative;
+    white-space: pre-line;
+}
+
+
+/*== common styles for both parts of tool tip ==*/
+.tool::before,
+.tool::after {
+    left: 50%;
+    opacity: 0;
+    position: absolute;
+    z-index: -100;
+}
+
+.tool:hover::before,
+.tool:focus::before,
+.tool:hover::after,
+.tool:focus::after {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    z-index: 100; 
+}
+
+
+/*== pointer tip ==*/
+.tool::before {
+    border-style: solid;
+    border-width: 1em 0.75em 0 0.75em;
+    border-color: #3a3a3a transparent transparent transparent;
+    bottom: 100%;
+    content: "";
+    margin-left: -0.5em;
+    transition: all .65s cubic-bezier(.84,-0.18,.31,1.26), opacity .65s .5s;
+    transform:  scale(.6) translateY(-90%);
+} 
+
+.tool:hover::before,
+.tool:focus::before {
+    transition: all .65s cubic-bezier(.84,-0.18,.31,1.26) .2s;
+}
+
+
+/*== speech bubble ==*/
+.tool::after {
+    background: #3a3a3a;
+    border-radius: .25em;
+    bottom: 180%;
+    color: #ffffff;
+    content: attr(data-tip);
+    margin-left: -3em;
+    padding: 2em;
+    transition: all .65s cubic-bezier(.84,-0.18,.31,1.26) .2s;
+    transform:  scale(.6) translateY(50%);  
+    width: 25em;
+}
+
+.tool:hover::after,
+.tool:focus::after  {
+    transition: all .65s cubic-bezier(.84,-0.18,.31,1.26);
+}
+
+.tool {
+color: #3a3a3a;
+border-bottom: 1px dotted;
+border-color: #fabbbb;
+}
+
+.tool:hover{
+    color: #fabbbb;
+    border-bottom: none;
+}
 
 /* works
 ==================================================*/
@@ -613,12 +698,14 @@ background-color: #3a3a3a;
 }
 
 .modal-content a {
-    color: #fabbbb;
+color: #3a3a3a;
+border-bottom: 1px dotted;
+border-color: #fabbbb;
 }
 
 .modal-content a:hover{
-    text-decoration: underline;
-     text-decoration-color: #3a3a3a;
+    color: #fabbbb;
+    border-bottom: none;
 }
 
 .popup-modal {
@@ -1055,7 +1142,6 @@ footer{
     #projects {
     padding-bottom: 50px;
   }
-
 .header-content h1 {
       font-size: 25px;
       margin-bottom: 0px;
@@ -1089,4 +1175,6 @@ footer{
     font-size: 10.5px;
     margin: 0 0 0px;
   }
+
+
 }
