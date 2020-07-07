@@ -35,6 +35,7 @@ body {
     font-size: 13px;
     line-height: 24px;
     cursor: crosshair;
+    -webkit-user-select: none;
 }
 
 .size-50 {
@@ -478,6 +479,7 @@ background-color: #3a3a3a;
     cursor: help;
     position: relative;
     white-space: pre-line;
+    outline: none;
 }
 
 
@@ -488,6 +490,7 @@ background-color: #3a3a3a;
     opacity: 0;
     position: absolute;
     z-index: -100;
+    outline: none;
 }
 
 .tool:active::before,
@@ -497,6 +500,7 @@ background-color: #3a3a3a;
     opacity: 1;
     transform: scale(1) translateY(0);
     z-index: 100; 
+    outline: none;
 }
 
 
@@ -510,11 +514,13 @@ background-color: #3a3a3a;
     margin-left: -0.5em;
     transition: all .65s cubic-bezier(.84,-0.18,.31,1.26), opacity .65s .5s;
     transform:  scale(.6) translateY(-90%);
+    outline: none;
 } 
 
 .tool:active::before,
 .tool:focus::before {
     transition: all .65s cubic-bezier(.84,-0.18,.31,1.26) .2s;
+   outline: none;
 }
 
 
@@ -530,22 +536,26 @@ background-color: #3a3a3a;
     transition: all .65s cubic-bezier(.84,-0.18,.31,1.26) .2s;
     transform:  scale(.6) translateY(50%);  
     width: 20em;
+   outline: none;
 }
 
 .tool:active::after,
 .tool:focus::after  {
     transition: all .65s cubic-bezier(.84,-0.18,.31,1.26);
+   outline: none;
 }
 
 .tool {
 color: #3a3a3a;
 border-bottom: 1px dotted;
 border-color: #fabbbb;
+outline: none;
 }
 
 .tool:hover{
     color: #fabbbb;
     border-bottom: none;
+    outline: none;
 }
 
 /* works
