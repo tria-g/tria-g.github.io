@@ -525,11 +525,11 @@ background-color: #3a3a3a;
     bottom: 180%;
     color: #ffffff;
     content: attr(data-tip);
-    margin-left: -3em;
+    margin-left: -4em;
     padding: 2em;
     transition: all .65s cubic-bezier(.84,-0.18,.31,1.26) .2s;
     transform:  scale(.6) translateY(50%);  
-    width: 25em;
+    width: 20em;
 }
 
 .tool:hover::after,
