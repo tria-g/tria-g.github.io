@@ -1,11 +1,4 @@
 
-$(window).load(function () {
-    "use strict";
-    // makes sure the whole site is loaded
-    $('body').delay(100).css({
-        'overflow': 'visible'
-    });
-})
 
 
 $(document).ready(function () {
