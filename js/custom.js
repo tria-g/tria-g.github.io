@@ -37,7 +37,6 @@ $(document).ready(function () {
     });
 
 
-
     // Menu opacity
     if ($(window).scrollTop() > 80) {
         $(".navbar-fixed-top").addClass("bg-nav");
