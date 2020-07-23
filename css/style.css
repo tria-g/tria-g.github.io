@@ -128,6 +128,67 @@ a.active {
   width: 100%;
 }
 
+#headercontainer {
+  color:#343434;
+  font-size:32px;
+  width:100%;
+  bottom:45%;
+  display:block;
+}
+
+#headercontainer p {
+ width: 50%;
+}
+
+#flip {
+  height:55px;
+  overflow:hidden;
+  color:#343434;
+  margin-top: 10px;
+}
+
+#flip > div > div {
+  color:#fff;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  height:60px;
+  margin-bottom:45px;
+  display:inline-block;
+  margin-top: -20px;
+}
+
+#flip div:first-child {
+  animation: show 7s linear infinite;
+}
+
+#flip div div {
+    color:#fff;
+    background:#343434;
+}
+#flip div:first-child div {
+  color:#343434;
+  background:#fabbbb;
+}
+
+#flip div:last-child div {
+  color:#fff;
+  background:#343434;
+}
+
+
+@keyframes show {
+  0% {margin-top:-270px;}
+  5% {margin-top:-165px;}
+  33% {margin-top:-165px;}
+  38% {margin-top:-80px;}
+  66% {margin-top:-80px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-270px;}
+}
+
 
 #header .header-content {
   height: 100vh;
@@ -906,6 +967,7 @@ footer{
 
     #header .header-content {
       font-size: 15px;
+      padding-left: 15px;
     }
 
     .header-content h1 {
