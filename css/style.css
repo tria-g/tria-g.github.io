@@ -438,6 +438,10 @@ outline: none;
     padding-bottom: 30px;
 }
 
+p {
+  margin-bottom: 10px;
+}
+
 .portfolio .categories-grid span {
     font-size: 30px;
     margin-bottom: 30px;
@@ -905,7 +909,7 @@ footer{
     }
 
     .header-content h1 {
-      font-size: 30px;
+      font-size: 35px;
     }
     
     .about-img-div img {
