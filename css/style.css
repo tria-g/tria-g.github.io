@@ -1119,7 +1119,7 @@ footer{
     margin-top: -25px;
   }
 
-  p {
+  p, ul, li {
     font-size: 10.5px;
     margin: 0 0 0px;
   }
