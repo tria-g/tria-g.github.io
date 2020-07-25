@@ -199,6 +199,18 @@ $(document).ready(function() {
     animatedIn: 'fadeInUp'
     });
 
+    $("#demo017").animatedModal({
+    modalTarget: 'animatedModal17',
+    animatedOut: 'fadeOutDown',
+    animatedIn: 'fadeInUp'
+    });
+
+    $("#demo018").animatedModal({
+    modalTarget: 'animatedModal18',
+    animatedOut: 'fadeOutDown',
+    animatedIn: 'fadeInUp'
+    });
+
     // scroll
    $(function() {
     $('.scroll-down').click (function() {
