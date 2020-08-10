@@ -436,11 +436,11 @@ background-color: #3a3a3a;
     border-style: solid;
     border-width: 1em 0.75em 0 0.75em;
     border-color: #3a3a3a transparent transparent transparent;
-    bottom: 100%;
+    top: 100%;
     content: "";
     margin-left: -0.5em;
     transition: all .65s cubic-bezier(.84,-0.18,.31,1.26), opacity .65s .5s;
-    transform:  scale(.6) translateY(-90%);
+    transform:  scale(.10) translateY(-90%);
     outline: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 } 
@@ -450,6 +450,7 @@ background-color: #3a3a3a;
     transition: all .65s cubic-bezier(.84,-0.18,.31,1.26) .2s;
    outline: none;
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   transform: rotate(180deg);
 }
 
 
@@ -457,7 +458,7 @@ background-color: #3a3a3a;
 .tool::after {
     background: #3a3a3a;
     border-radius: .25em;
-    bottom: 180%;
+    top: 180%;
     color: #ffffff;
     content: attr(data-tip);
     margin-left: -4em;
