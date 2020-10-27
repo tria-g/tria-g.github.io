@@ -211,6 +211,18 @@ $(document).ready(function() {
     animatedIn: 'fadeInUp'
     });
 
+    $("#demo019").animatedModal({
+    modalTarget: 'animatedModal19',
+    animatedOut: 'fadeOutDown',
+    animatedIn: 'fadeInUp'
+    });
+
+    $("#demo020").animatedModal({
+    modalTarget: 'animatedModal20',
+    animatedOut: 'fadeOutDown',
+    animatedIn: 'fadeInUp'
+    });
+
     // scroll
    $(function() {
     $('.scroll-down').click (function() {

@@ -691,7 +691,7 @@ video {
 
 
 
-.close-popup-modal2, .close-popup-modal3, .close-popup-modal4, .close-popup-modal5, .close-popup-modal6, .close-popup-modal7, .close-popup-modal8, .close-popup-modal9, .close-popup-modal10, .close-popup-modal11, .close-popup-modal12, .close-popup-modal13, .close-popup-modal14, .close-popup-modal15, .close-popup-modal16, .close-popup-modal17, .close-popup-modal18{
+.close-popup-modal2, .close-popup-modal3, .close-popup-modal4, .close-popup-modal5, .close-popup-modal6, .close-popup-modal7, .close-popup-modal8, .close-popup-modal9, .close-popup-modal10, .close-popup-modal11, .close-popup-modal12, .close-popup-modal13, .close-popup-modal14, .close-popup-modal15, .close-popup-modal16, .close-popup-modal17, .close-popup-modal18, .close-popup-modal19, .close-popup-modal20{
     float: right;
     margin: 20px;
     font-size: 22px;
@@ -706,7 +706,7 @@ video {
     right: 14px;
 }
 
-.animatedModal2-on .close-popup-modal2, .close-popup-modal3, .close-popup-modal4, .close-popup-modal5, .close-popup-modal6, .close-popup-modal7, .close-popup-modal8, .close-popup-modal9, .close-popup-modal10, .close-popup-modal11, .close-popup-modal12, .close-popup-modal13, .close-popup-modal14, .close-popup-modal15, .close-popup-modal16, .close-popup-modal17, .close-popup-modal18{
+.animatedModal2-on .close-popup-modal2, .close-popup-modal3, .close-popup-modal4, .close-popup-modal5, .close-popup-modal6, .close-popup-modal7, .close-popup-modal8, .close-popup-modal9, .close-popup-modal10, .close-popup-modal11, .close-popup-modal12, .close-popup-modal13, .close-popup-modal14, .close-popup-modal15, .close-popup-modal16, .close-popup-modal17, .close-popup-modal18, .close-popup-modal19, .close-popup-modal20{
     opacity: 1;
 }
 
