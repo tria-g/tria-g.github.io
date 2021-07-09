@@ -258,6 +258,7 @@ a.stuff:hover{
 .about-img-div img {
     margin: 0 auto;
     margin-right: -100px;
+    padding-top: 100px;
 }
 
 
