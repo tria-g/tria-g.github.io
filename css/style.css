@@ -1126,9 +1126,10 @@ footer{
     margin: 0 0 0px;
   }
 
-  img {
-    width: 80%;
-  }
+.modal-content img {
+   width: 80%;
+
+}
 
   .tool::after {
     width: 22em;
