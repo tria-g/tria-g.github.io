@@ -223,21 +223,5 @@ $(document).ready(function() {
     animatedIn: 'fadeInUp'
     });
 
-    // scroll
-   $(function() {
-    $('.scroll-down').click (function() {
-      $('html, body').animate({scrollTop: $('section.ok').offset().top }, 'slow');
-      return false;
-    });
-  });
-
-   $(windows).resize(function(){
-        if ($(window).width() < $('.content').width()){
-            $('.container').css('position', 'static');
-        }
-        else{
-            $('.container').css('position', 'fixed');
-        }
-    });
 
 });
