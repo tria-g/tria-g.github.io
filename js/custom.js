@@ -231,4 +231,13 @@ $(document).ready(function() {
     });
   });
 
+   $(windows).resize(function(){
+        if ($(window).width() < $('.content').width()){
+            $('.container').css('position', 'static');
+        }
+        else{
+            $('.container').css('position', 'fixed');
+        }
+    });
+
 });

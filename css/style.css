@@ -35,7 +35,6 @@ body {
     font-size: 13px;
     line-height: 24px;
     cursor: crosshair;
-    -webkit-user-select: none;
 }
 
 
@@ -643,6 +642,7 @@ p {
 .modal-content {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
     border: none;
+
 }
 
 .modal-content a {
@@ -673,6 +673,7 @@ border-color: #fabbbb;
     position: fixed;
     z-index: 100000;
     right: 14px;
+    
 }
 
 .animatedModal-on .close-popup-modal {
