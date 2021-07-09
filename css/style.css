@@ -673,7 +673,7 @@ border-color: #fabbbb;
     position: fixed;
     z-index: 100000;
     right: 14px;
-    
+
 }
 
 .animatedModal-on .close-popup-modal {
@@ -1124,6 +1124,10 @@ footer{
   p, ul, li {
     font-size: 10.5px;
     margin: 0 0 0px;
+  }
+
+  img {
+    width: 80%;
   }
 
   .tool::after {
