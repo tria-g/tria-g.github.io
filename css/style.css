@@ -268,11 +268,6 @@ a.stuff:hover{
 }
 
 
-@media screen and (max-width:  375px) {
-  .column {
-    width: 100%;
-  }
-}
 #about {
     padding-top: 100px;
 }
