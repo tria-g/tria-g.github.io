@@ -1106,6 +1106,13 @@ footer{
 
 @media only screen and (max-width: 375px)  { 
       
+         .about-img-div img {
+            padding-top: 0px;
+    }
+
+    
+
+
       #headercontainer {
   font-size:28px;
 }
