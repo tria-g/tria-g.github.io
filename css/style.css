@@ -955,6 +955,9 @@ footer{
 @media only screen and (max-width: 600px)
 {
 
+ .scroll-down {
+    top: 745px;
+ }
     #header .header-content {
       font-size: 15px;
       padding-left: 15px;
@@ -1115,9 +1118,6 @@ footer{
     width: 100%;
  }
 
- .scroll-down {
-    top: 730px;
- }
 
 .col-md-6-s {
     padding-top: 200px;
