@@ -1140,6 +1140,8 @@ footer{
     .about-img-div img {
     margin-right: -30px;
     width: 350px;
+        padding-top: 0px;
+
     }
     .portfolio .categories-grid .categories ul li a {
        margin: 0 2px;
