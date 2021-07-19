@@ -139,51 +139,60 @@ a.active {
 }
 
 #flip {
+font-size: 18px;
   height:55px;
   overflow:hidden;
   color:#343434;
   margin-top: 10px;
+  display:inline-block;
+  vertical-align:bottom;
+  width: 135px; height: 35px; padding-left: 0px !important; margin-left: 10px !important; margin-top: 10px !important; margin-bottom: -5px !important;
 }
 
 #flip > div > div {
+font-size: 18px;
   color:#fff;
   padding-left: 12px;
   padding-right: 12px;
   padding-top: 15px;
   padding-bottom: 5px;
-  height:60px;
+  height:50px;
   margin-bottom:45px;
   display:inline-block;
   margin-top: -20px;
 }
 
 #flip div:first-child {
+    font-size: 18px;
   animation: show 7s linear infinite;
 }
 
 #flip div div {
+    font-size: 18px;
     color:#fff;
     background:#343434;
 }
 #flip div:first-child div {
   color:#343434;
+  font-size: 18px;
   background:#fabbbb;
 }
 
 #flip div:last-child div {
   color:#fff;
+  font-size: 18px;
   background:#343434;
 }
 
 
 @keyframes show {
   0% {margin-top:-270px;}
-  5% {margin-top:-165px;}
-  33% {margin-top:-165px;}
+  5% {margin-top:-160px;}
+  33% {margin-top:-160px;}
   38% {margin-top:-80px;}
   66% {margin-top:-80px;}
-  71% {margin-top:0px;}
-  99.99% {margin-top:0px;}
+  71% {margin-top:-5px;}
+  99.99% {margin-top:-5px;}
   100% {margin-top:-270px;}
 }
 
@@ -961,7 +970,7 @@ footer{
     #header .header-content {
       font-size: 15px;
       padding-left: 15px;
-       padding-top: 250px;
+       padding-top: 50px;
     }
 
     .header-content h1 {
@@ -1111,9 +1120,33 @@ footer{
 @media only screen and (max-width: 375px)  { 
       
       #headercontainer {
-  font-size:26px;
+  font-size:21px;
 }
 
+#flip {
+  font-size: 12px;
+}
+
+  #flip > div > div {
+  font-size: 12px;
+}
+
+#flip div:first-child {
+  font-size: 12px;
+}
+
+#flip div div {
+  font-size: 12px;
+}
+#flip div:first-child div {
+  font-size: 12px;
+}
+
+#flip div:last-child div {
+  font-size: 12px;
+}
+
+}
   #headercontainer img {
     width: 100%;
  }
