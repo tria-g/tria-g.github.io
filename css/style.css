@@ -482,6 +482,9 @@ a:hover {
 /**
 * Desktop Navigation 
 */
+ .container-fluid {
+    padding-right: 150px;
+    padding-left: 150px;}
 
 * {
     margin: 0;
@@ -558,6 +561,10 @@ a hover {
 }
 
 @media only screen and (max-width: 768px) {
+   .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+   }
     .nav-menu {
         position: fixed;
         left: -100%;
