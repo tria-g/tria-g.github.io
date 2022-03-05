@@ -675,7 +675,7 @@ a hover {
 
 .hero-single .hero-title {
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 5rem;
 }
 
 @media (min-width: 768px) {
