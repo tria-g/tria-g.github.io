@@ -640,12 +640,12 @@ a hover {
 .hero .hero-title {
     color: #3a3a3a;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 5rem;
 }
 
 @media (min-width: 768px) {
   .hero .hero-title {
-    font-size: 3.5rem;
+    font-size: 5rem;
      color: #3a3a3a;
   }
 }
