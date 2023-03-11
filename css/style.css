@@ -1027,7 +1027,7 @@ h2 .footy {
 }
 
 ul {
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 
 footerul a hover {
@@ -1106,7 +1106,6 @@ footerul a hover {
 footer {
   text-align: center;
   color: #fff;
-  padding: 25px 0;
   background: #0062d3;
 }
 
