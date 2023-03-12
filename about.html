@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset=" metf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>About</title>
+    <title>About me</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
@@ -35,6 +35,43 @@
     <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+
+
+ <!-- SCROLL TO TOP -->
+  <style>
+  #scroll-to-top {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      display: none;
+      width: 40px;
+      height: 40px;
+      background-color: #333;
+      color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 24px;
+      line-height: 40px;
+      cursor: pointer;
+      opacity: 0.7;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    #scroll-to-top:hover {
+      opacity: 1;
+    }
+
+    #scroll-to-top i {
+      transform: rotate(0 deg);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    #scroll-to-top:hover i {
+      transform: rotate(-180deg);
+    }
+  </style>
+
+
   </head>
   <body>
  <!-- ======= Header ======= -->
@@ -52,9 +89,6 @@
                 </li>
                     <li class="nav-item">
                     <a href="#" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -96,11 +130,12 @@ function closeMenu() {
               <div class="col-sm-3"><img class="img-fluid img-thumbnail rounded-circle" src="img/about.jpg" alt=""></div>
               <div class="col-sm-9">
                 <br>
-                <h2 class="font-weight-normal" style="font-size: 22px; color:#3a3a3a;">It's-a me, <b> Tria G</b>, the human behind this website! &#128075; </h1>
+                <!--h2 class="font-weight-normal" style="font-size: 22px; color:#3a3a3a;"> </h1-->
+                <h2 class="h1">Meet the human behind the pixels &#128075;</h2>
                 <br>
-                <p class="text-muted mb-4" style="font-size: 14px;">My fascination with the power of design to communicate ideas and emotions has been a driving force in my creative journey. It all began with me experimenting on creating graphics and video editing for various projects. As I continued to develop my skills, I took on more responsibility and executed numerous branding and communication endeavors.</p>
+                <p class="text-muted mb-4" style="font-size: 14px;">As a creative professional, I am fascinated by the power of design to communicate ideas and emotions. <br> <br> My name is Tria Gonzales, and my journey began with experimenting on creating graphics and video editing for various projects. As I continued to develop my skills, I took on more responsibility and executed numerous branding and communication endeavors.</p>
 
-               <p class="text-muted mb-4" style="font-size: 14px;">My educational background as a graduate from Ateneo de Manila University, with a major in Management Information Systems, a specialization in Enterprise Systems, and a minor in Korean Studies, has given me a unique perspective on the intersection between business and technology. Through my studies, I gained experience analyzing systems, understanding business processes, and project management. Combining this with my passion for design, I was inspired to explore user experience, where I am continiously learning and challenging design limits. With my background in business technology, I bring a holistic approach to creating solutions for each project.</p>
+               <p class="text-muted mb-4" style="font-size: 14px;">As an Ateneo de Manila University graduate with a major in Management Information Systems, a specialization in Enterprise Systems, and a minor in Korean Studies, I gained experience analyzing systems, understanding business processes, and project management. Combining this unique perspective on the intersection between business and technology with my passion for design, I bring a holistic approach to creating solutions. </p>
 
                 <p class="text-muted mb-4" style="font-size: 14px;">
                 I'm always on the lookout for new challenges and opportunities to grow my skills and knowledge. By remaining open to new ideas and perspectives, I'm able to always create with a fresh and innovative perspective.
@@ -262,9 +297,7 @@ function closeMenu() {
 <img src="img/psyduck.png" width="50px"> </img><p>
                   <h5>Playful spirit</h5>
                   <p class="mb-0 text-gray h5">I love Psyduck, Godzilla, Ice Bear, Sadness, Kirby, Baymax, and all things cute with dinosaurs, ducks, and whales!
-
-
-</p>
+                  </p>
                 </div>
               </div>
             </div>
@@ -283,6 +316,29 @@ function closeMenu() {
       <br>
 
     </div></div>
+
+
+ <!-- Scroll to top button -->
+<button onclick="topFunction()" id="scroll-to-top" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+<script>
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("scroll-to-top").style.display = "block";
+    } else {
+      document.getElementById("scroll-to-top").style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+</script>
 <footer class="text-muted" style="background: #3a3a3a;">
   <div class="container d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-sm-between">
     <div class="row">

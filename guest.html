@@ -34,6 +34,41 @@
     <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+    <!-- SCROLL TO TOP -->
+  <style>
+  #scroll-to-top {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      display: none;
+      width: 40px;
+      height: 40px;
+      background-color: #333;
+      color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 24px;
+      line-height: 40px;
+      cursor: pointer;
+      opacity: 0.7;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    #scroll-to-top:hover {
+      opacity: 1;
+    }
+
+    #scroll-to-top i {
+      transform: rotate(0 deg);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    #scroll-to-top:hover i {
+      transform: rotate(-180deg);
+    }
+  </style>
+
+
   </head>
   <body>
  <!-- ======= Header ======= -->
@@ -51,9 +86,6 @@
                 </li>
                     <li class="nav-item">
                     <a href="about.html" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -251,11 +283,13 @@ function closeMenu() {
 
             As UX practitioners, we must always go back to knowing who are users are. The best way to do this is to <mark> directly talk to those involved. </mark>
                 <br><br>
-         Additionally, introducing new technology can often raise concerns, however, thorough <mark> research on current global standards </mark> and actually understanding more about it can actually prove to be a highly effective solution for addressing pain points. 
+            Additionally, introducing new technology can often raise concerns, however, thorough <mark> research on current global standards </mark> and actually understanding more about it can actually prove to be a highly effective solution for addressing pain points. 
                 <br><br>
 
              Ultimately, <mark> the future of our industry lies in embracing technology</mark>, and I am personally excited to continue exploring innovative solutions that can enhance more of our business processes in the near future. 
-                <br><br>
+            <br><br>
+
+            I am immensely grateful to my superiors, Juuya and Sha, for their guidance and trust in me throughout this amazing project! It has been one of my favorite projects to date!
 
 
 
@@ -290,6 +324,30 @@ function closeMenu() {
       <br>
 
     </div></div>
+
+
+ <!-- Scroll to top button -->
+<button onclick="topFunction()" id="scroll-to-top" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+<script>
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("scroll-to-top").style.display = "block";
+    } else {
+      document.getElementById("scroll-to-top").style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+</script>
+
 <footer class="text-muted" style="background: #3a3a3a;">
   <div class="container d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-sm-between">
     <div class="row">

@@ -34,7 +34,45 @@
     <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
-  </head>
+<!-- SCROLL TO TOP -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-saf1fKjvL0rb4W4iPWEw+jzK0e1+a/MHrxW8ofTjTtOT9TtRiAdOxW8L/fyjKivQDCOvNNhxhmfap3tctmEkpw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <!-- SCROLL TO TOP -->
+  <style>
+  #scroll-to-top {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      display: none;
+      width: 40px;
+      height: 40px;
+      background-color: #333;
+      color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 24px;
+      line-height: 40px;
+      cursor: pointer;
+      opacity: 0.7;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    #scroll-to-top:hover {
+      opacity: 1;
+    }
+
+    #scroll-to-top i {
+      transform: rotate(0 deg);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    #scroll-to-top:hover i {
+      transform: rotate(-180deg);
+    }
+  </style>
+
+</head>
   <body>
  <!-- ======= Header ======= -->
   <header id="header">
@@ -51,9 +89,6 @@
                 </li>
                     <li class="nav-item">
                     <a href="about.html" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -83,9 +118,9 @@ function closeMenu() {
 
 </script>
 </nav>
-
-    </div>
-  </header><!-- End Header -->
+</div>
+  </header>
+  <!-- End Header -->
 
   
       </div>
@@ -206,6 +241,12 @@ function closeMenu() {
 
               <br> <br>
               Anticipating what lies ahead, I'm excited to see what's in store for MemoPH! It's not just a tool that we use internally anymore, but it is something that can help other companies with their own memo processes as well! 
+              <br> <br>
+              I am grateful for this opportunity to work with such a wonderful team at MemoPH. Lucien, Ivan, Corwyn, Xyza, and Ken, thank you for accepting me and making me feel welcome. 
+
+              To my superiors, Juuya, Sha, and Hannah, thank you for always being there to answer my questions and helping me bring the best memo experience. 
+
+              Lastly, a special mention to E, who was the designer of the product before me, our hard work have laid the foundation for the success of this project. Once again, thank you to everyone I've worked with!
 
 
           <h2 class="h3 mb-4">Other UX design works</h2>
@@ -231,13 +272,34 @@ function closeMenu() {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
       <br>
+    </div>
 
-    </div></div>
+ <!-- Scroll to top button -->
+<button onclick="topFunction()" id="scroll-to-top" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+<script>
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("scroll-to-top").style.display = "block";
+    } else {
+      document.getElementById("scroll-to-top").style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+</script>
+
  <footer class="text-muted" style="background: #3a3a3a;">
   <div class="container d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-sm-between">
     <div class="row">

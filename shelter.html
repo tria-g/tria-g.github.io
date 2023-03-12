@@ -34,7 +34,46 @@
     <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <!-- Scroll to top style -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-saf1fKjvL0rb4W4iPWEw+jzK0e1+a/MHrxW8ofTjTtOT9TtRiAdOxW8L/fyjKivQDCOvNNhxhmfap3tctmEkpw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <!-- SCROLL TO TOP -->
+  <style>
+  #scroll-to-top {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      display: none;
+      width: 40px;
+      height: 40px;
+      background-color: #333;
+      color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 24px;
+      line-height: 40px;
+      cursor: pointer;
+      opacity: 0.7;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    #scroll-to-top:hover {
+      opacity: 1;
+    }
+
+    #scroll-to-top i {
+      transform: rotate(0 deg);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    #scroll-to-top:hover i {
+      transform: rotate(-180deg);
+    }
+  </style>
+
   </head>
+
   <body>
  <!-- ======= Header ======= -->
   <header id="header">
@@ -52,9 +91,7 @@
                     <li class="nav-item">
                     <a href="about.html" class="nav-link">About</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
+
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -212,13 +249,18 @@ function closeMenu() {
 
             Through this project, I recognized the importance of being prepared for natural disasters. I gained a newfound appreciation and interest in the <mark> practice of risk management </mark>through this project. The importance of being prepared for calamities and the role that risk management plays in it cannot be overstated. I am grateful for the opportunity to work on a system that addresses this critical need and to have learned from the expertise of risk management professionals.
              <br> <br>   
-            While I hope that the system will never need to be used, it perfectly highlights our role as UX designers, and how we are able to play in  <mark>ensuring that people are well-prepared for any eventuality </mark>. 
+            While I hope that the system will never need to be used, it perfectly highlights our role as UX designers, and how we are able to play in  <mark>ensuring that people are well-prepared for any eventuality</mark>. 
 
             <br> <br>
-            Through my experience in conducting usability testing in this project, I have come to greatly appreciate the <mark>value of UX research</mark>. By gaining direct feedback from users, we can <mark>identify pain points and areas for improvement</mark>, and ultimately create a more effective and efficient product. This process not only benefits the user, but also the development team and stakeholders, as it ensures that the final product meets the needs and expectations of all parties involved. I firmly believe that usability testing is a crucial practice in the field of UX, and I will continue to prioritize it in my future projects. <br> <br>
+            Through my experience in conducting usability testing in this project, I have come to greatly appreciate the <mark>value of UX research</mark>. By gaining direct feedback from users, we can <mark>identify pain points and areas for improvement</mark>, and ultimately create a more effective and efficient product. This process not only benefits the user, but also the development team and stakeholders, as it ensures that the final product meets the needs and expectations of all parties involved. I firmly believe that usability testing is a crucial practice in the field of UX, and I will continue to prioritize it in my future projects. 
 
             This project was a valuable reminder of the importance of our work and the impact that we can have on people's lives.
              <br> <br>
+             Thank you so much to Paul and Billy for working with me to bring this system from design to development. I also want to extend my gratitude to Ms. Mariel and the rest of the stakeholders for their valuable collaboration and feedback. 
+            
+            Additionally, I want to give a huge thanks to my manager, Juuya, for guiding me and always helping me improve my skills.         
+
+
 
           <h2 class="h3 mb-4">Other UX Design works</h2>
           <div class="row">
@@ -250,9 +292,32 @@ function closeMenu() {
           </div>
         </div>
       </div>
-      <br>
 
     </div></div>
+
+ <!-- Scroll to top button -->
+<button onclick="topFunction()" id="scroll-to-top" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+<script>
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("scroll-to-top").style.display = "block";
+    } else {
+      document.getElementById("scroll-to-top").style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+</script>
+
+
  <footer class="text-muted" style="background: #3a3a3a;">
   <div class="container d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-sm-between">
     <div class="row">
@@ -286,6 +351,7 @@ function closeMenu() {
     </div>
   </div>
 </footer>
+</div>
 
     <!-- JavaScript files-->
     <script src="vendor/jquery/jquery.min.js"></script>
