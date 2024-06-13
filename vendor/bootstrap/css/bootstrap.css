@@ -576,6 +576,12 @@ pre code {
   }
 }
 
+@media (min-width: 2560px) {
+  .container {
+    max-width: 2000px;
+  }
+}
+
 .container-fluid {
   width: 100%;
   padding-right: 15px;
@@ -6746,6 +6752,7 @@ button.bg-dark:focus {
   display: flex !important;
 }
 
+
 .d-inline-flex {
   display: -ms-inline-flexbox !important;
   display: inline-flex !important;
@@ -6937,6 +6944,7 @@ button.bg-dark:focus {
   height: 100%;
   border: 0;
 }
+
 
 .embed-responsive-21by9::before {
   padding-top: 42.857143%;

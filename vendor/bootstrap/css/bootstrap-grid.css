@@ -47,6 +47,13 @@ html {
   }
 }
 
+@media (min-width: 2560px) {
+    .container {
+        max-width: 2000px;
+    }
+
+}
+
 .container-fluid {
   width: 100%;
   padding-right: 15px;
@@ -54,6 +61,12 @@ html {
   margin-right: auto;
   margin-left: auto;
 }
+
+@media (min-width: 2000px) {
+    .container-fluid {
+        max-width: 1500px;
+    }
+
 
 .row {
   display: -ms-flexbox;
@@ -1146,6 +1159,7 @@ html {
     display: inline-flex !important;
   }
 }
+
 
 @media print {
   .d-print-none {
