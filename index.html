@@ -107,23 +107,24 @@
 <script> const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
-hamburger.addEventListener("click", mobileMenu);
-
-function mobileMenu() {
+hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
-}
+
+    if (navMenu.classList.contains("active")) {
+        document.body.style.overflow = "hidden"; // Disable scrolling
+    } else {
+        document.body.style.overflow = ""; // Enable scrolling
+    }
+});
 
 const navLink = document.querySelectorAll(".nav-link");
 
-navLink.forEach(n => n.addEventListener("click", closeMenu));
-
-function closeMenu() {
+navLink.forEach(n => n.addEventListener("click", () => {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
-}
-
-
+    document.body.style.overflow = ""; // Enable scrolling when closing menu
+}));
 </script>
 </nav>
 
@@ -139,22 +140,37 @@ function closeMenu() {
           <!--<p class="display-6 color-d">Hello, world!</p>-->
 <div class="container-fluid" style="width: 100%;">
         <div class="text-container">
-
+<center>
             <div class="hero-section">
             <img src="img/me.gif" style="padding-bottom: 25px !important;" alt="" width="250px">
                 <h1 class="hero-title" style="margin-left: 15px !important;">
                   <span>I'm <span style="color: #CF7575; font-weight: bold;">  Tria</span>, the creative cookie!</span>
                   <span><br>Stirring up valuable experiences in design and video with a heaping dose of creativity and a strong brew of iced coffee ☕️ </span> 
                 </h1>
-
+</center>
           </div>
           <style>
             .hero-section {
               display: flex;
               flex-wrap: wrap;
-              justify-content: left;
+              justify-content: center;
               align-items: center;
             }
+
+           @media (max-width: 768px) {
+    .hero-section {
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+        flex-direction: column; /* This ensures items don’t awkwardly align */
+    }
+}
+
+@media (min-width: 769px) {
+    .hero-section {
+        flex-direction: row; /* Keeps side-by-side layout for bigger screens */
+    }
+}
 
             .hero-title {
               text-align: left;
@@ -290,7 +306,7 @@ function closeMenu() {
                     </p></a>
                 </div>
                 <div class="py-1"><a class="reset-anchor" href="bearbakes.html">
-                      <p class="mb-0 listing-item-description"> Graphic Design | Videography</p>
+                      <p class="mb-0 listing-item-description"> Graphic Design & Videography</p>
                     <h2 class="h3 listing-item-heading"> Flour, sugar, and passion: The sweet story behind Bear Bakes MNL</h2></a>
                    <br>
                 </div>
@@ -404,7 +420,7 @@ function closeMenu() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }
 </script>
-
+</div></div>
 <footer class="text-muted" style="background: #3a3a3a;">
   <div class="container d-flex align-items-center justify-content-between" style="padding-left: 40px; padding-right:40px; ">
   <!--div class="container d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-sm-between"-->

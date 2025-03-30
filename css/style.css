@@ -462,9 +462,15 @@ a:hover {
   letter-spacing: 1px;
 }
 
-#header .logo a {
-   color: #3a3a3a;
-  text-decoration: none;
+.logo a {
+    text-decoration: none; /* Removes underline */
+    color: #3a3a3a; /* Default text color */
+    transition: color 0.3s ease-in-out; /* Smooth transition */
+}
+
+.logo a:hover {
+    color: #fabbbb; /* Change this to whatever hover color you want */
+      text-decoration: none; /* Removes underline */
 }
 
 #header .logo img {
@@ -519,6 +525,7 @@ a hover {
 
 .navbar a:hover {
    color: #fabbbbb;
+   text-decoration: none; /* Removes underline */
 }
 
 .hamburger {
@@ -536,6 +543,12 @@ a hover {
     background-color: #101010;
 }
 
+.hamburger:hover .bar {
+    background-color: #fabbbb; /* Change this to the hover color you prefer */
+    transition: background-color 0.3s ease-in-out;
+}
+
+
 .nav-menu {
     display: flex;
     justify-content: space-between;
@@ -547,8 +560,8 @@ a hover {
 }
 
 .nav-link{
-    font-size: 1.6rem;
-    font-weight: 400;
+    font-size: 1.8rem;
+    font-weight: 500;
     color: #3a3a3a;
 }
 
@@ -580,21 +593,36 @@ a hover {
     padding-right: 15px;
     padding-left: 15px;
    }
-    .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 5rem; /* Keeps the original spacing */
-        width: 100%;
-        flex-direction: column;
-        font-family: 'Lato', sans-serif;
-        background-color: #fff;
-        text-align: center;
-        transition: left 0.3s ease-in-out;
-        color: #3a3a3a;
-        padding-top: 1rem; /* Adds some space so text isn’t too close to the top */
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow below */
+.nav-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+    background-color: #fff;
+    text-align: center;
+    color: #3a3a3a;
+    padding-top: 3rem; /* Add more space at the top */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    
+    opacity: 0;
+    transform: translateY(-10px); /* Slight move down */
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    pointer-events: none; /* Prevents clicks when hidden */
+}
 
-    }
+.nav-menu.active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+/* ONLY adds space before the first item */
+.nav-item:first-child {
+    margin-top: 8rem;
+}
+
 
     /* Add a new pseudo-element for a white background behind the X */
     .nav-menu::before {
@@ -608,12 +636,9 @@ a hover {
     }
 
 
-    .nav-menu.active {
-        left: 0;
-    }
-
     .nav-item {
         margin: 2.5rem 0;
+
     }
 
     .hamburger {
@@ -637,6 +662,7 @@ a hover {
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
+
 
 /*--------------------------------------------------------------
 # Hero Section
