@@ -1,14 +1,20 @@
 $(function () {
-    $grid = $('.masonry-wrapper').masonry({
+    var $grid = $('.masonry-wrapper').masonry({
         itemSelector: '.grid-item',
         columnWidth: '.grid-item',
         percentPosition: true,
         transitionDuration: 300,
+        horizontalOrder: true // ✅ Forces left-to-right order
     });
 
-    $grid.imagesLoaded().progress( function() {
-        $grid.masonry();
+    $grid.imagesLoaded().progress(function () {
+        $grid.masonry('layout'); // ✅ Ensures layout updates correctly
     });
+
+    // Fix weird reordering after Masonry runs
+    setTimeout(() => {
+        $grid.masonry('layout');
+    }, 500);
 
     $('.navbar-toggler').on('click dblclick', function () {
         $('.sidebar, .page-holder').toggleClass('active');
@@ -16,10 +22,8 @@ $(function () {
 
     lightbox.option({
         "disableScrolling": true
-   });
-});
+    });
 
-// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
-let vh = window.innerHeight * 0.01;
-// Then we set the value in the --vh custom property to the root of the document
-document.documentElement.style.setProperty('--vh', `${vh}px`);
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+});

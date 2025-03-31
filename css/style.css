@@ -763,6 +763,12 @@ p {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+.masonry-wrapper {
+    display: flex;
+    flex-wrap: wrap;  /* Keeps items in row order */
+    justify-content: space-between; /* Even spacing */
+    align-items: flex-start; /* Align items properly */
+}
 
 .portfolio .categories-grid .categories ul li {
     list-style: none;
